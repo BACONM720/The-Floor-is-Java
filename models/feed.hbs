@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="card col-md-6">
+                <br>
+                <textarea class="form-control" rows="3" cols="50" id="inputPost" placeholder="Got something to say?" maxlength="280"></textarea>
+                <label id="charRemaining" for="inputPost">280</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Camera-->
+                    <i class="fa fa-camera-retro fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <!--Video-->
+                    <i class="fas fa-video fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <!--Bar Chart-->
+                    <i class="fa fa-chart-bar fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <!-- Button -->
+                    <button type="text" id="postBtn" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+        <br>
+            <button id="btn-count" type="button" class="btn btn-primary">
+                Comments <span id="count" class="badge badge-light">{{count}}</span>
+            </button>
+        </div>
+    </div>
+    <div id="feedPosts">
+	{{#each comment}}
+       <div class="row justify-content-md-center pt-4">
+         <div class="card col-md-6"><div class="row">
+           <div class="col-md-9">{{comment}}</div>
+              <div class="col-md-3">
+                  <button type="button" name="delete {{_id}}" class="btn btn-danger">Delete</button>
+				  <button type="button" name="like {{_id}}" class="btn btn-primary">Likes  <span class="badge badge-light">{{up_votes}}</span>
+				  </button>
+              </div>
+           </div>
+          </div>
+         </div>
+    {{/each}}
+	
+    </div>
+</div>
+<script src="/javascripts/feed.js"></script>
