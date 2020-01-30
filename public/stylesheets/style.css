@@ -5,9 +5,10 @@
 }
 
 .sidebar{
-   background-color: rgb(205, 243, 255);
+   background-color: rgb(202, 201, 201);
 }
 
 .primary{
-  background-color: rgba(255, 255, 255, 0.116);
+  background-color: gray;
 }
+
