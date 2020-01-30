@@ -70,21 +70,4 @@ $("#postBtn").click(function (event){
 
 
     }
-/*$("#feedPosts").click(function (event)
-{
-console.log(event.target.name);
-var targetArray = event.target.name.split(" ");
-if(event.target.name)
-{
-$.ajax({
-		url: '/removeComment/'+targetArray[1],
-		type: 'DELETE',
-        success: function(result) {
-		getComments();
-       }
-     });
-   }
-});
-
-}*/
 );
