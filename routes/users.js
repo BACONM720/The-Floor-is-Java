@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+ 
 router.post('/register', function(req, res, next){
     var username = req.body.user_name;
     var password = req.body.password;
@@ -92,5 +93,6 @@ function createJwt(profile) {
         expiresIn: '10d'
     });
 }
+ 
 
 module.exports = router;

@@ -130,7 +130,7 @@ font:20px "Times New Roman", Helvetica, Arial, sans-serif!important;
     0 10px 10px rgba(0,0,0,.2), 
     0 20px 20px rgba(0,0,0,.15);
 }
-
+ 
 .jumbotron {
   text-align: center;
 }
@@ -168,5 +168,8 @@ font:20px "Times New Roman", Helvetica, Arial, sans-serif!important;
   left: 50%;
   top: 50%;
 
+.primary{
+  background-color: 255,255,255,0.116;
+ 
 }
 

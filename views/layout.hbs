@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -6,12 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/stylesheets/style.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/javascripts/mainPageFunctions.js"></script>
     <title>Test Website</title>
-
-</head>
-  <body>
 
     <header class="navbar navbar-expand navbar-dark">
         <div class="navbar-nav-scroll">
@@ -20,18 +17,15 @@
                     <a class="nav-link" href="http://danu7.it.nuigalway.ie:8601/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.com">Google</a>
+                    <a class="nav-link" href="http://danu7.it.nuigalway.ie:8601/aboutUs">About Us</a>
                 </li>
             </ul>
         </div>
-        <div class="col-2">
-        </div>
-        <div class="btn-group col-7 d-block d-sm-none">
-
-            <div class="dropleft">
+                <div class="btn-group col-7 d-block d-sm-none">
+            <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Login</button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropleft-item">
+                <a class="dropdown-item">
                     <div class="form-group mb-3">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" placeholder="@Bungee">
@@ -39,105 +33,25 @@
                      </div>
                 </a>
 
-                <a class="dropleft-item">
+                <a class="dropdown-item">
                     <div class="form-group mb-3">
                         <label for="password">Password</label>
                         <div class="input-group" id="show_hide_password">
-                        <input type="password" class="form-control" id="password" placeholder="password123">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
                         <div class="invalid-feedback" style="width: 100%;">Wrong password</div>
                     </div>
                 </a>
 
             </div>
         </div>
-            <button type="button" class="btn btn-danger">Register</button>
+            <button type="button" id = "registerButton2" class="btn btn-danger" data-toggle="modal" data-target = "#modal">Sign Up</button>
         </div>
-        
     </header>
-      
-    <div class = "container-fluid">
-            <div class="row flex-xl-nowrap">
+ 
 
-                <div class="sidebar d-none d-sm-block col-2">
-                <form class="mb-3">
-                    <h1 class="mb-3">User Login</h1>
-                            <div class="form-group mb-3">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="@Bungee">
-                                <div class="invalid-feedback" style="width: 100%;">Wrong username</div>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="password">Password</label>
-                                <div class="input-group" id="show_hide_password">
-                                <input type="password" class="form-control" id="password" placeholder="password123">
-                                <div class="invalid-feedback" style="width: 100%;">Wrong password</div>
-                                </div>
-                            </div>
-                            <input class = "btn btn-outline-secondary" type = "submit" value="Log-In">
-                </form>
-                <div class="mb-3">
-                    <h3>Don't have an account?</h3>
-                    <button type="button" class="btn btn-danger btn-lg btn-block">Register</button>
-                </div>
+</head>
+  <body>
+     {{{body}}}
 
-                </div>
-
-                    <div class="primary col-10">
-                        <div class="col-md-8 mb-3">
-                             <h1 class="bd-title">Title</h1>
-                             <p1>Right so this is a bunch of stuff about stuff and it can be replaced with other stuff
-                            about stuff.
-                             </p1>
-                        </div>
-                        <div class="col-md-8">
-
-                            <h2>How it works</h2>
-                            <p2>Type the maximum money you can allocate for food this week and tick any of the boxes
-                            to make the meals more personalized to you. If you would like to like or comment on the recipes,
-                            please register or if you already have please login.
-                             </p2>
-                        </div>
-                        <form class="form">
-                            <div class="col-md-4 mb-3">
-                                <label for="moneyAllowed">Allowance</label>
-                                <input type="number" class="form-control" id="moneyAllowed" placeholder="70">
-                                <div class="invalid-feedback">""Please enter a valid number</div>   
-                            </div>
-
-                        <h3 class="col-md mb-3">Personalize</h3>
-                    <div class="row col-md">
-                        <div class="d-block col-md-2">
-                            <div class="custom-control custom-checkbox">
-                                <input id = "vegan" name = "personalizedSearch" type = "checkbox" class="custom-control-input">
-                                <label class="custom-control-label" for="vegan">Vegan</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input id = "gluten-free" name = "personalizedSearch" type="checkbox" class="custom-control-input">
-                                <label class="custom-control-label" for="gluten-free">Gluten-free</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input id = "dairy-free" name = "personalizedSearch" type="checkbox" class="custom-control-input">
-                                <label class="custom-control-label" for="dairy-free">Dairy-free</label>
-                            </div>
-                        </div>
-                        <div class="d-block col-md-2 mb-3">
-                            <div class="custom-control custom-checkbox">
-                                <input id="high-calorie" name="personalizedSearch" type="checkbox" class="custom-control-input">
-                                <label class="custom-control-label" for="high-calorie">High-calorie</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input id="low-calorie" name="personalizesSearch" type="checkbox" class="custom-control-input">
-                                <label class="custom-control-label" for="low-calorie">Low-calorie</label>
-                            </div>
-                        </div>
-            </div>
-    </div>
-
-
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
-

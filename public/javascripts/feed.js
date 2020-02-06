@@ -13,8 +13,11 @@ $(document).ready(
                 success: function (data) {
                     console.log(data)
 					var posts = "";
+ 
                     for (var i = 0; i < data.length; i++) 
 					{
+ 
+                
                         posts += "<div class='row justify-content-md-center pt-4'>" +
                             "<div class='card col-md-6'><div class='row'>"
                             + "<div class='col-md-9'>"+ data[i].comment + "</div>" + "<div class='col-md-3'>" +
@@ -70,21 +73,4 @@ $("#postBtn").click(function (event){
 
 
     }
-/*$("#feedPosts").click(function (event)
-{
-console.log(event.target.name);
-var targetArray = event.target.name.split(" ");
-if(event.target.name)
-{
-$.ajax({
-		url: '/removeComment/'+targetArray[1],
-		type: 'DELETE',
-        success: function(result) {
-		getComments();
-       }
-     });
-   }
-});
-
-}*/
-);
+ 
