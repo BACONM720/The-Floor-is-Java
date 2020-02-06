@@ -1,14 +1,172 @@
 
+body {
+border:0px!important;
+  padding: 0px!important;
+  font: 10px "Times New Roman", Helvetica, Arial, sans-serif!important;
+  color: black!important;
+  text-align: center;
+  background: linear-gradient(to right, purple 0%, mediumpurple 100%);!important;
+  /*background-image: url("https://image.freepik.com/free-photo/playing-cards-green-background-free-space-text_35378-791.jpg");
+  */ background-size: cover;
+  background-attachment: fixed;
+}
+
+
+h1{
+ background-color: grey;/*url("http://cheerspokernh.com/wp-content/uploads/2018/02/bigstock-poker-table-background-26587844-2-1.jpg") !important;*/
+  padding: 10px!important;
+  font: 100px "Times New Roman", Helvetica, Arial, sans-serif!important;
+  color: ghostwhite!important;
+
+}
+p{
+  font: 50px "Times New Roman", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.container{
+   width: 1920px!important;
+
+ }
 .navbar{
-  text-emphasis-color:white;
-  background-color: rgb(51, 16, 83);
+  font: 40px "Times New Roman", Helvetica, Arial, sans-serif!important;
+  color: white !important;
+  text-align: center;
+  border: 2px;
+  border-color: black;
+  background-color: rebeccapurple;
+
 }
 
-.sidebar{
-   background-color: rgb(202, 201, 201);
+.nav-item{
+  font-size:30px ;
+  color: grey !important;
 }
 
-.primary{
-  background-color: gray;
+
+.jumbotron{
+  width: 1520px;
+  font: 75px "Lucida Grande", Helvetica, Arial, sans-serif!important;
+  color: slategrey!important;
+  background: rebeccapurple!important;
+
+}
+
+.how-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: orangered;
+  font-size: 60px;
+  text-align: center;
+}
+.how-section1 .subheading{
+  background-color: white;
+  font-size: 50px;
+  color: silver;
+  text-align: center;
+
+}
+.how-section1 .row
+{
+  background-color: white;
+  margin-top: 10%;
+}
+.how-img
+{
+  background-color: rebeccapurple;
+  text-align: center;
+  padding-bottom: 0%;
+}
+.how-img img{
+  white-space: revert;
+  width: 100%;
+  image-resolution: normal;
+}
+.text{
+  font: 22px "Times New Roman"!important;
+  color: black!important;
+}
+
+.col-md-8{
+font:20px "Times New Roman", Helvetica, Arial, sans-serif!important;
+
+}
+
+.submit{
+  color: grey!important;
+  position: center!important;
+}
+
+.form-group{
+  color: white!important;
+}
+.ulist{
+  font: 22px "Times New Roman"!important;
+}
+
+.col-md-4{
+  font: 50px "Times New Roman"!important;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.jumbotron{
+  color: #fff;
+  font-size: 12em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.app-box{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  width: 1500px;
+}
+
+.header{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+
+.checks{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.checkbox {
+  width: 1500px;
+}
+
+.acc-btn{
+  position: absolute;
+  width: 500px;
+  text-align: center;
+  font-size: 50px;
+  background-color: deepskyblue;
+  border-color: white;
+  left: 50%;
+  top: 50%;
+
 }
 
