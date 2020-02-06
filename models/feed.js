@@ -13,11 +13,8 @@ $(document).ready(
                 success: function (data) {
                     console.log(data)
 					var posts = "";
- 
                     for (var i = 0; i < data.length; i++) 
 					{
- 
-                
                         posts += "<div class='row justify-content-md-center pt-4'>" +
                             "<div class='card col-md-6'><div class='row'>"
                             + "<div class='col-md-9'>"+ data[i].comment + "</div>" + "<div class='col-md-3'>" +
@@ -73,4 +70,4 @@ $("#postBtn").click(function (event){
 
 
     }
- 
+);
