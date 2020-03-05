@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Comment = require('../models/comments');
- 
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -118,6 +118,31 @@ router.delete('/removeComment/:id', function(req, res, next){
 
 router.get('/feed', function(req, res, next) {
 res.render('feed');
+});
+
+/**
+* Retrieves meals from the database
+*/
+router.get('/getMeals', function(req,res, next)
+{
+Recipe.find({}, function (err,
+recipes) {
+if (err)
+res.send(err);
+res.json(recipes);
+});
+});
+
+/* Add meals to database */
+router.post('/addMeals',function(req, res, next) {
+recipes = new Recipe(req.body);
+recipes.save(function (err, savedRecipe) {
+if (err)
+throw err;
+res.json({
+"id": savedRecipe._id
+});
+});
 });
 
 
