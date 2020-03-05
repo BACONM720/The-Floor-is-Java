@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Comment = require('../models/comments');
-var Recipe = require('/students/danu7_hs1/myGroupProjectApp/models/recipes.js');
- 
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -145,7 +144,6 @@ res.json({
 });
 });
 });
-
 
 
  
