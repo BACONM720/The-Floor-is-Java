@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var Comment = require('../models/comments');
-
+var Recipe = require('/students/danu7_hs1/myGroupProjectApp/models/recipes.js'); //CHANGE LOCATION
+ 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -123,15 +124,19 @@ res.render('feed');
 /**
 * Retrieves meals from the database
 */
-router.get('/getMeals', function(req,res, next)
-{
-Recipe.find({}, function (err,
-recipes) {
-if (err)
-res.send(err);
-res.json(recipes);
+
+router.get('/getMealsData', function(req,res, next) {
+	var resultsArray = [];
+	Recipe.find({ $or: [{vegan:req.query.vegan}, {glutfree:req.query.glutfree},{dFree:req.query.dFree},{hCalorie:req.query.hCalorie},{lCalorie:req.query.lCalorie}, {veg:req.query.veg}]}, function (err,recipes) {
+		for (i = 0; i < recipes.length; i++) {
+			resultsArray.push(recipes[i]);
+		}
+		if (err)
+		res.send(err);
+		res.render('meals', {items : resultsArray});
 });
 });
+
 
 /* Add meals to database */
 router.post('/addMeals',function(req, res, next) {
@@ -144,6 +149,7 @@ res.json({
 });
 });
 });
+
 
 
  
