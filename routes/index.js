@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Comment = require('../models/comments');
-var Recipe = require('/students/danu7_hs1/myGroupProjectApp/models/recipes.js'); //CHANGE LOCATION
+var Recipe = require('/students/danu7_hs1/App1/models/recipes.js'); //CHANGE LOCATION
  
 
 /* GET home page. */
@@ -127,7 +127,17 @@ res.render('feed');
 
 router.get('/getMealsData', function(req,res, next) {
 	var resultsArray = [];
-	Recipe.find({ $or: [{vegan:req.query.vegan}, {glutfree:req.query.glutfree},{dFree:req.query.dFree},{hCalorie:req.query.hCalorie},{lCalorie:req.query.lCalorie}, {veg:req.query.veg}]}, function (err,recipes) {
+	Recipe.find({ $and:[
+						{$or: [
+							{vegan:req.query.vegan},
+							{glutfree:req.query.glutfree},
+							{dFree:req.query.dFree},
+							{hCalorie:req.query.hCalorie},
+							{lCalorie:req.query.lCalorie},
+							{veg:req.query.veg}
+						]},
+						{rPrice: { $lte: req.query.rPrice}}
+					]}, function (err,recipes) {
 		for (i = 0; i < recipes.length; i++) {
 			resultsArray.push(recipes[i]);
 		}
@@ -150,7 +160,4 @@ res.json({
 });
 });
 
-
-
- 
 module.exports = router;
