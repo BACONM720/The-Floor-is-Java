@@ -57,7 +57,17 @@ function() {
 			}
 			filterCount+=1;
 		}
-		window.location.href = search;
+		if (filterCount == 0) {
+				search += "?vegan=true&glutfree=true&dFree=true&hCalorie=true&lCalorie=true&veg=true";
+		}
+		var maxPrice = $("#moneyAllowed").val();
+		if (maxPrice>0) {
+			search += "&rPrice="+maxPrice;
+			window.location.href = search; 
+		}
+		else {
+			window.alert("Please enter a valid maximum meal price");
+		}
 	});
 }
 );
