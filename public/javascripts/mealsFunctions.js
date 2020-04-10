@@ -1,8 +1,9 @@
 $(document).ready(
 function() {
 	$("#mealsButton").click(function () {
-		var search = "http://danu7.it.nuigalway.ie:8618/getMealsData"; // CHANGE PORT
+		var search = "http://danu7.it.nuigalway.ie:8626/getMealsData"; // CHANGE PORT
 		var filterCount = 0;
+		
 		if ($("#vegan").is(":checked")) {
 			if(filterCount>0) {
 				search+="&vegan=true";
@@ -57,7 +58,18 @@ function() {
 			}
 			filterCount+=1;
 		}
-		window.location.href = search;
+ 		if(filterCount == 0){
+		search+="?vegan=true&glutfree=true&dFree=true&hCalorie=true&lCalorie=true&veg=true";
+		}
+
+		 var maxPrice = $("#moneyAllowed").val();
+		if (maxPrice>0) {
+			search += "&rPrice="+maxPrice;
+			window.location.href = search; 
+		}
+		else {
+			window.alert("Please enter a valid maximum meal price");
+		}
 	});
 }
 );

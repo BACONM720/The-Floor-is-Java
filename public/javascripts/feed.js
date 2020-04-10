@@ -61,7 +61,7 @@ $("#postBtn").click(function (event){
 			else if(targetArray[0] == "like")
             {								
                 $.ajax({
-                    url: '/upComment/' + targetArray[1],
+                    url: '/upVotes/' + targetArray[1],
                     type: 'PUT',					
                     success: function(result) {
                         getComments();
@@ -72,5 +72,5 @@ $("#postBtn").click(function (event){
         });
 
 
-    }
+    })
  
