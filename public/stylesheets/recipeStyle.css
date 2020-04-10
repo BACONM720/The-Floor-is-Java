@@ -1,0 +1,126 @@
+
+body {
+border:0px!important;
+  padding: 0px!important;
+  color: darkslategray!important;
+  text-align: center;
+  background: linear-gradient(to right, beige 0%, beige 100%)!important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container{
+  font: 10px "Times New Roman", Helvetica, Arial, sans-serif!important;
+}
+
+h1{
+ background-color: grey;
+  padding: 10px!important;
+  font: 80px "Times New Roman", Helvetica, Arial, sans-serif!important;
+  color: ghostwhite!important;
+
+}
+p{
+  font: 50px "Times New Roman", Helvetica, Arial, sans-serif;
+  color: gray;
+}
+
+.jumbotron{
+  font: 75px "Lucida Grande", Helvetica, Arial, sans-serif!important;
+  color: slategrey!important;
+  background: rebeccapurple!important;
+  text-align: center;
+
+}
+
+.how-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: orangered;
+  font-size: 60px;
+  text-align: center;
+}
+.how-section1 .subheading{
+  background-color: white;
+  font-size: 50px;
+ 
+  text-align: center;
+
+}
+.how-section1 .row
+{
+  background-color: white;
+  margin-top: 10%;
+}
+.how-img
+{
+  background-color: rebeccapurple;
+  text-align: center;
+  padding-bottom: 0%;
+}
+.how-img img{
+  white-space: revert;
+  width: 100%;
+  image-resolution: normal;
+}
+.text{
+  font: 22px "Times New Roman"!important;
+  color: black!important;
+}
+
+.col-md-8{
+font:20px "Times New Roman", Helvetica, Arial, sans-serif!important;
+
+}
+
+.submit{
+  color: grey!important;
+  position: center!important;
+}
+
+.form-group{
+  color: white!important;
+}
+.ulist{
+  font: 22px "Times New Roman"!important;
+}
+
+.col-md-4{
+  font: 50px "Times New Roman"!important;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.app-box{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  width: 1500px;
+}
+
+
+.checks{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.checkbox {
+  width: 1500px;
+}
+
+.acc-btn {
+  position: absolute;
+  width: 500px;
+  text-align: center;
+  font-size: 50px;
+  background-color: deepskyblue;
+  border-color: white;
+  left: 50%;
+  top: 50%;
+}
+
+
+

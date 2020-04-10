@@ -1,4 +1,5 @@
-
+   <link rel="stylesheet" href="/stylesheets/style.css"/>
+<script src = "/javascripts/auth.js"></script>
   
     <div class = "container-fluid">
             <div class="row justify-content-center">
@@ -18,7 +19,7 @@
                      <div class="row justify-content-center">
                          <div class="col-10 col-md-6 mb-3" id="howItWorks">
                             <h2>How it works</h2>
-                            <p2>Type the maximum money you can allocate for food this week and tick any of the boxes
+                            <p2>Type the maximum money you can allocate for a meal and tick any of the boxes
                             to make the meals more personalized to you. If you would like to like or comment on the recipes.
                             To comment or upvote/downvote meals please login or, if you don't have an account, register.
                              </p2>
@@ -31,7 +32,7 @@
                         <form class="form">
                             <div class="col-8 col-md-6 mb-3">
                                 <label for="moneyAllowed">Allowance</label>
-                                <input type="number" class="form-control" id="moneyAllowed" placeholder="70">
+                                <input type="number" class="form-control" id="moneyAllowed" placeholder="10">
                                 <div class="invalid-feedback">""Please enter a valid number</div>   
                             </div>
 
@@ -70,8 +71,8 @@
                 <button type="submit" class="btn btn-lg btn-block btn-primary" id = "mealsButton"> Get My Meals</button>
             </div>
             
-            <div class="sidebar d-none d-sm-block col-3">
-                <form class="mb-3">
+            <div class="sidebar d-none d-sm-block-none ">
+                <form class="form-horizontal" role="form" id = "log-form">
                     <h1 class="mb-3">User Login</h1>
                             <div class="form-group mb-3">
                                 
@@ -103,18 +104,18 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form class="form-horizontal" role="form" id="reg-form">
                             <div class="form-group">
-                                <label for="email" class="col-form-label">Email</label>
-                                <input id = "email" type="text" class="form-control">
+                                <label for="inputUsername" class="col-form-label">Username</label>
+                                <input id = "inputUsername" type="text" class="form-control input-lg required">
                             </div>
                         
                             <div class="form-group">
-                                 <label for="email" class="col-form-label">Password</label>
-                            <input id = "email" type="password" class="form-control">
+                                 <label for="inputPasssword" class="col-form-label">Password</label>
+                            <input id = "inputPassword" type="password" class="form-control input-lg required">
                             </div>
 
-                            <div class="modal-footer">
+                            <div class="form-group">
                                 <button type="submit" class="btn btn-lg btn-primary">Register Now</button>
                             </div>
                         </form>
@@ -127,4 +128,3 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- 

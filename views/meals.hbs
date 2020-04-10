@@ -1,11 +1,13 @@
+   <link rel="stylesheet" href="/stylesheets/recipeStyle.css"/>
+
 <section class = "get">
-	<h1>Get Data</h1>
+	<h1>Your Meals...</h1>
 		<div>
 		{{#each items }}
 			<article class= "item">
 				<div>Recipe Name: {{ this.rName }} </div>
 				<div>Store Name: {{ this.sName }} </div>
-				<div>Price: â‚¬{{ this.rPrice }} </div>
+				<div>Price: &#8364;{{ this.rPrice }} </div>
 				<div><br><br></div>
 			</article>
 		{{/each}}
